@@ -35,8 +35,9 @@
 ![alt](./assets/images/MoodyFoody-Landscape.gif)
 
 ## User Instructions
+1. Upon page load, the user is prompted to fill out desired criteria on a form.  This criteria includes...
 
-| Critera | Options |
+| Critera | Options/Input |
 | ----------- | ----------- |
 | Location | address, zipcode, city, etc. |
 | Price Range | $, $$, $$$, $$$$ |
@@ -45,6 +46,10 @@
 | Restaurant Type | sitdown or takeaway |
 | Time | right now, breakfast, lunch, or dinner |
 
+2. Once criteria is entered, click **Submit**.
+3. To view specific restaurant details, click the restaurant name.
+4. To favorite a restaurant, click the empty heart next to the restaurant name.
+5. To display favorited restaurants, click the empty heart in the top left corner of the page.
 
 ## License
 This project is licensed under the terms of [MIT](https://opensource.org/licenses/MIT).
