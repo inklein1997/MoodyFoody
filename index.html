@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,91 +9,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>MoodyFoody</title>
 
 </head>
+
 <body>
-    <div class="center container">
-            <h1> MoodyFoody </h1>
+    <div id='title' class="container valign-wrapper">
+        <h1> MoodyFoody </h1>
     </div>
-    <!-- Add container for logo at later time-->
-    <div class= "center-align container">
+    <div class="center-align">
         <div class="col s1">
-            <form class= "center-block container" id="searchForm" action="results.html">
-                <!-- form heading -->
-                <div class= "col ">
+            <form class="center-block container" id="searchForm" action="results.html">
+                <div class="col ">
                     <h3> Find your Perfect Restaurant</h3>
                     <h5> Fill out this quick survey to find your ideal restaurant </h5>
                 </div>
-
-                <!-- Location -->
-                    <div class="input-field col" ID="location">
-                        <input placeholder="LOCATION" id="locationInput" type="text" class="validate"> </input>
-                        <!-- <label class="active" for="locationInput">LOCATION</label> -->
-                    </div>
-    
-                <!-- inclue javascript to appear # for range finder-->
-                <!-- Price Range -->
+                <div class="input-field col" ID="location">
+                    <input placeholder="LOCATION" id="locationInput" type="text" class="validate"> </input>
+                </div>
                 <div class="range-field" id="priceRange">
                     <p>PRICE RANGE</p>
-                    <input type="range" id="priceRangeInput" min="1" max="4"/>
+                    <input type="range" id="priceRangeInput" min="1" max="4" />
                 </div>
-                <!-- inclue javascript to appear # for range finder-->
-                <!-- Distance -->
                 <div class="range-field" id="distance">
                     <p>DISTANCE</p>
-                    <input type="range" id="distanceInput" min="1" max="20"/>
+                    <input type="range" id="distanceInput" min="1" max="20" />
                 </div>
-
-                <!-- auto complete form-->
-                <!-- Food Genre -->
                 <div class="input-field col" ID="foodGenre">
                     <label class="active" for="foodTypeInput"> </label>
                     <input placeholder="GENRE" id="foodTypeInput" type="text" class="validate"></input>
                 </div>
-
-                <!-- Type -->
-                <!-- I might need to rewrite the options code -->
-                <!-- <div class="flip">
-                    <p> RESTURANT TYPE</p>
-                </div> -->
-
                 <div class="input-field col s1" id="resturantType">
-                    <select class="select" id='type'> 
+                    <select class="select" id='type'>
                         <option value="" disabled selected>RESTURANT TYPE</option>
-                        <option value="-table">Sitdown</option>
+                        <option value="-sitdown">Sitdown</option>
                         <option value="-takeaway">Takeaway</option>
                     </select>
 
                 </div>
-
-
-                <!-- <div class="flip">
-                    <p> WHEN </p>
-                </div> -->
                 <div class="input-field col s12" id="timeInput">
-                    <!-- <select class="dropdownOptions" id="timeInput"> -->
-                        <!-- <option value="" disabled selected> WHEN</option> -->
-                        <select class="select" id="time">
-                                <option value="" disabled selected> WHEN </option>
-                                <option value="right-now">Right Now</option>
-                                <option value="breakfast">Breakfast</option>
-                                <option value="lunch">Lunch</option>
-                                <option value="dinner">Dinner</option>
-                        </select>
+                    <select class="select" id="time">
+                        <option value="" disabled selected> WHEN </option>
+                        <option value="&open_now=true">Right Now</option>
+                        <option value="open_at=8">Breakfast</option>
+                        <option value="open_at=12">Lunch</option>
+                        <option value="open_at=17">Dinner</option>
+                    </select>
                 </div>
-                
-                <!-- submit button -->
                 <input class="btn" ID="submitBtn" type="submit" name="action"> </input>
             </form>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+
 </html>
